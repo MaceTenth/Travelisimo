@@ -39,7 +39,12 @@ export class NavBarNotLogin extends Component<any, NavBarNotLoginState> {
     loginInput.password = password;
     this.setState({ loginInput });
   };
-  private login = (args: SyntheticEvent) => {
+
+  // If the user accidentally clicks on a login without details 
+  // he will receive Message and highlight the field to connect
+
+
+  private login = () => {
     
     let input = document.querySelector(".username");
     const loginInput = { ...this.state.loginInput };

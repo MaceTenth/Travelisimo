@@ -30,6 +30,8 @@ export class UserRegister extends Component<any, RegisterState> {
   public componentWillUnmount = () => {
     this.unsubscribeStore();
   };
+
+  //validating user registration
   private updateFirstName = (args: SyntheticEvent) => {
     const input = args.target as HTMLSelectElement;
     const firstName = input.value;
@@ -93,9 +95,9 @@ export class UserRegister extends Component<any, RegisterState> {
     this.setState({ user });
   };
 
-  private sendForm = (args: SyntheticEvent) => {
+  private sendForm = () => {
     const user = { ...this.state.user };
-
+    //validating and displaying error with this loop
     for (const [key, value] of Object.entries(user)) {
       if (value === undefined && key !== "userID" && key !== "isAdmin") {
         alert(`Plese check and complete the ${key.toUpperCase()} field`);

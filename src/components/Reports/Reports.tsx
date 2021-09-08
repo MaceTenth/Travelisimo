@@ -112,6 +112,9 @@ export class Reports extends Component<any, ChartState> {
     this.setState({ toolTipsArr });
   };
 
+  // Add a visible label to the columns of the table and also click
+  //  functionality so that the color of the column changes.
+
   public render(): JSX.Element {
     return (
       <div className="chart">
