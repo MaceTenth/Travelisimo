@@ -40,7 +40,7 @@ export class NavBarNotLogin extends Component<any, NavBarNotLoginState> {
     this.setState({ loginInput });
   };
   private login = (args: SyntheticEvent) => {
-    console.log(args);
+    
     let input = document.querySelector(".username");
     const loginInput = { ...this.state.loginInput };
     if (loginInput.userName === "") {
