@@ -42,12 +42,16 @@ export class AddVacation extends Component<any, AddVacationState> {
   public componentDidMount = () => {
     const vacation = { ...this.state.vacation };
     const date = new Date();
+    // Set hours, minutes and seconds
     date.setHours(0, 0, 0);
     vacation.fromDate = date;
     vacation.toDate = date;
 
     this.setState({ vacation });
   };
+
+  // validating all inpunts and changing the styling
+  // accordingly with add and remove classList
 
   private updateDestination = (args: SyntheticEvent) => {
     const input = args.target as HTMLSelectElement;
@@ -136,6 +140,9 @@ export class AddVacation extends Component<any, AddVacationState> {
       alert("Please upload an image");
       return;
     }
+
+    // validate which field is incomplete and display the error
+    //  with the input name to the user
 
     for (const [key, value] of Object.entries(vacation)) {
       if (value === undefined && key !== "vacationID" && key !== "follow") {

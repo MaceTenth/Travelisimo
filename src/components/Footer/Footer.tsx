@@ -6,6 +6,8 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import "./Footer.css";
 
+// This component is for the purpose of demo-only non-functional purpose
+
 export default function Footer() {
   const [value, setValue] = React.useState(0);
 

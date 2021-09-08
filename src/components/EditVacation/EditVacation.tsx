@@ -60,6 +60,9 @@ export class EditVacation extends Component<any, AddVacationState> {
       })
       .catch((err) => alert(err));
   };
+
+  // validating all inpunts and changing the styling
+  // accordingly with add and remove classList
   private updateDestination = (args: SyntheticEvent) => {
     const input = args.target as HTMLSelectElement;
     const destination = input.value;
@@ -148,6 +151,9 @@ export class EditVacation extends Component<any, AddVacationState> {
       alert("Please upload an image");
       return;
     }
+
+    //alidate which field is incomplete and display the error
+    //  with the input name to the user
 
     for (const [key, value] of Object.entries(vacation)) {
       if (value === undefined && key !== "vacationID" && key !== "follow") {

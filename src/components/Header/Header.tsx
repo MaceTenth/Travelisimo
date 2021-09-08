@@ -50,7 +50,7 @@ export class Header extends Component<any, HeaderState> {
         Authorization: "Bearer " + localStorage.getItem("token"),
       },
     };
-    // check JWT token
+    // checking JWT token
     fetch(
       "https://travelisom-server-heroku.herokuapp.com/api/login/login-check",
       options

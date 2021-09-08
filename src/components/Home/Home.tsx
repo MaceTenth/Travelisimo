@@ -105,7 +105,7 @@ export class Home extends Component<any, HomeState> {
   private arrangeVacations = () => {
     const allVacations = [...this.state.vacations];
     const followedVacations = [...this.state.followedVacations];
-    // if user log out set all vacations follow false
+    //  all vacations follow state to false if the user is not logged
     if (this.state.isLogin === false) {
       allVacations.map((v) => (v.follow = false));
     }
@@ -122,7 +122,11 @@ export class Home extends Component<any, HomeState> {
     }
     this.setState({ vacations: allVacations });
   };
-  //fix format of date that mySQL return
+
+  //Date format from SQL data base is not user friendly
+  //this function in converting from yyyy-dd-mm format to
+  // local dd/mm/yyyy format
+
   private fixDateFromMySQL = (str: any) => {
     const FormatDate = str.slice(0, 10);
     const newFormatDate =
