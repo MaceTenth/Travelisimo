@@ -1,0 +1,23 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#root > ::-webkit-scrollbar {
+  width: 10px;
+}
+
+#root > ::-webkit-scrollbar-track {
+  background: #39393a;
+}
+
+#root > ::-webkit-scrollbar-thumb {
+  background: #e9d2f4;
+}
+
+#root > ::-webkit-scrollbar-thumb:hover {
+  background: #88a2aa;
+}

@@ -1,0 +1,11 @@
+.home {
+  margin-top: 15px;
+  display: inline-flex;
+}
+.home .vacationBox {
+  margin-right: 25px;
+}
+
+h1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}

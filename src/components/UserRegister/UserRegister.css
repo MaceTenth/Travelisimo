@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
+
+.registerion-page input {
+  background-color: #ece6e600;
+}
+
+.registerion-page form {
+  display: inline-grid;
+}
+
+.registerion-page label {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerion-page .invalid {
+  background-color: pink;
+  border: 1px solid blue;
+}
+
+.registerion-page {
+  display: inline-grid;
+  background: #ffffffbf;
+  padding: 30px;
+  color: #39393a;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  width: 400px;
+  
+  border-radius: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.registerion-page p {
+  margin: 0;
+  margin-top: 5px;
+}

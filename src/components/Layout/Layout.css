@@ -1,0 +1,25 @@
+.layout {
+  height: 200vh;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/images/back.png");
+}
+.layout > * {
+  box-sizing: border-box;
+}
+.layout > main {
+  margin-top: 20px;
+}
+
+.layout > footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.MuiBottomNavigation-root {
+  background-color: rgb(207, 207, 207) !important;
+}

@@ -1,0 +1,15 @@
+/* body {
+  height: 50vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/assets/images/404.png");
+} */
+
+img {
+  height: 60%;
+  width: 85%;
+}

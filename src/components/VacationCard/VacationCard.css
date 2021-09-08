@@ -1,0 +1,56 @@
+.vacationBox .MuiTypography-body2 {
+  border-bottom: 1px solid #ada296;
+  border-top: 1px solid #ada296;
+  overflow: auto;
+  height: 150px;
+}
+.vacationBox .root {
+  max-width: 360px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.vacationBox .media {
+  height: 200px;
+}
+.vacationBox .MuiTypography-h5 {
+  color: #0d324d;
+}
+
+.MuiTypography-h1 {
+  font-size: 4rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 600;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+}
+
+.vacationBox ::-webkit-scrollbar {
+  width: 10px;
+}
+
+.vacationBox ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.vacationBox ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.vacationBox ::-webkit-scrollbar-thumb:hover {
+  background: #88a2aa;
+}
+
+.vacationBox #date {
+  border-bottom: 1px solid #ada296;
+}
+.vacationBox #price {
+  color: #0d324d;
+  font-size: 20px;
+}
+
+.vacationBox button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
