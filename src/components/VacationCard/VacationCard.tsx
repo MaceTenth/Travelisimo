@@ -61,6 +61,8 @@ export class VacationCard extends Component<any, VactionBoxState> {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
       },
       body: JSON.stringify(sendInfo),
     };
@@ -81,6 +83,13 @@ export class VacationCard extends Component<any, VactionBoxState> {
     const userID = +this.state.user.userID;
     const options = {
       method: "DELETE",
+
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
+      },
     };
 
     fetch(

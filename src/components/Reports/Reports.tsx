@@ -46,6 +46,8 @@ export class Reports extends Component<any, ChartState> {
       method: "GET",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
       },
     };
 

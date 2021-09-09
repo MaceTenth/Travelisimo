@@ -66,6 +66,8 @@ export class AdminPanel extends Component<any, AdminPanelState> {
         Authorization: "Bearer " + localStorage.getItem("token"),
         "Content-Type": "application/json",
         Accept: "application/json",
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
       },
       body: JSON.stringify(vacation),
     };

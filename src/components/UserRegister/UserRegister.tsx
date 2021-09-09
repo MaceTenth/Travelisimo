@@ -110,6 +110,8 @@ export class UserRegister extends Component<any, RegisterState> {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
       },
       body: JSON.stringify(this.state.user),
     };

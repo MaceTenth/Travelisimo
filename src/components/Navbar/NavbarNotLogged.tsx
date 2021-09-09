@@ -40,12 +40,10 @@ export class NavBarNotLogin extends Component<any, NavBarNotLoginState> {
     this.setState({ loginInput });
   };
 
-  // If the user accidentally clicks on a login without details 
+  // If the user accidentally clicks on a login without details
   // he will receive Message and highlight the field to connect
 
-
   private login = () => {
-    
     let input = document.querySelector(".username");
     const loginInput = { ...this.state.loginInput };
     if (loginInput.userName === "") {
@@ -68,6 +66,8 @@ export class NavBarNotLogin extends Component<any, NavBarNotLoginState> {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
       },
       body: JSON.stringify(this.state.loginInput),
     };
@@ -105,6 +105,8 @@ export class NavBarNotLogin extends Component<any, NavBarNotLoginState> {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
       },
       body: JSON.stringify(store.getState().user),
     };

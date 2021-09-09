@@ -48,6 +48,8 @@ export class Header extends Component<any, HeaderState> {
       method: "GET",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
       },
     };
     // checking JWT token

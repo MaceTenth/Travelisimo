@@ -176,6 +176,8 @@ export class EditVacation extends Component<any, AddVacationState> {
       method: "PUT",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
+        mode: "cors", // no-cors, *cors, same-origin
+        credentials: "include", // include, *same-origin, omit
       },
       body: formData,
     };
